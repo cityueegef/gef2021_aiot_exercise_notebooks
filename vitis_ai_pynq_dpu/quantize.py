@@ -10,7 +10,7 @@ from tensorflow_model_optimization.quantization.keras import vitis_quantize
 
 MODEL_DIR = './' # Output directory
 FLOAT_MODEL = 'float_model.h5'
-QAUNT_MODEL = 'quantized_model.h5'
+QUANT_MODEL = 'quantized_model.h5'
 
 # Loading the float model
 print('Loading the float model...')
@@ -36,7 +36,7 @@ print('\nRunning model quantization...')
 
 
 # Saving the quantized model
-path = os.path.join(MODEL_DIR, QAUNT_MODEL)
+path = os.path.join(MODEL_DIR, QUANT_MODEL)
 
 print(f'\nQuantized model has been saved to "{path}"')
 #================================================================================
